@@ -1,1 +1,1 @@
-Simple [OrientDb](http://www.orientechnologies.com/orientdb/) example using java api
+Simple [OrientDb](http://www.orientechnologies.com/orientdb/) example using java api.
