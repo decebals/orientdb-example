@@ -17,12 +17,11 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-    
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<orientdb.version>1.6.3</orientdb.version>
 		<slf4j.version>1.7.5</slf4j.version>
-		<log4j.version>1.2.17</log4j.version>
 	</properties>
 
 	<build>
@@ -59,7 +58,7 @@
 			<artifactId>orientdb-object</artifactId>
 			<version>${orientdb.version}</version>
 		</dependency>
-		
+
 		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -68,14 +67,9 @@
         </dependency>
         <dependency>
 	        <groupId>org.slf4j</groupId>
-	        <artifactId>slf4j-log4j12</artifactId>
+	        <artifactId>slf4j-simple</artifactId>
 	        <version>${slf4j.version}</version>
-        </dependency>            
-        <dependency>
-	        <groupId>log4j</groupId>
-	        <artifactId>log4j</artifactId>
-	        <version>${log4j.version}</version>
-        </dependency>            		
+        </dependency>
 	</dependencies>
 
 </project>
