@@ -32,7 +32,7 @@ import com.orientechnologies.orient.core.sql.query.OSQLSynchQuery;
  */
 public class QueryDbExample {
 
-	private static Logger log = LoggerFactory.getLogger(QueryDbExample.class);
+	private static final Logger log = LoggerFactory.getLogger(QueryDbExample.class);
 
     public static void main(String[] args) {
         long time = System.currentTimeMillis();
@@ -109,16 +109,16 @@ public class QueryDbExample {
             log.debug(p.toString());
         }
 
-        log.debug("Query persons by firstname");
-        String sql = "select * from Person where firstname like 'D%'";
+        log.debug("Query persons by firstName");
+        String sql = "select * from Person where firstName like 'D%'";
         log.debug("sql = {}", sql);
         List<Person> persons = db.query(new OSQLSynchQuery<Person>(sql));
         for (Person p : persons) {
             log.debug(p.toString());
         }
 
-        log.debug("Query persons by lastname");
-        sql = "select * from Person where lastname like 'S%'";
+        log.debug("Query persons by lastName");
+        sql = "select * from Person where lastName like 'S%'";
         log.debug("sql = {}", sql);
         persons = db.query(new OSQLSynchQuery<Person>(sql));
         for (Person p : persons) {
