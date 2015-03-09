@@ -23,8 +23,8 @@ import java.util.List;
  */
 public class Person {
 
-    private String firstname;
-    private String lastname;
+    private String firstName;
+    private String lastName;
     private int age;
 
     private Address defaultAddress;
@@ -32,20 +32,20 @@ public class Person {
 
     private Account account;
 
-    public String getFirstname() {
-        return firstname;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public List<Address> getAddresses() {
@@ -83,15 +83,15 @@ public class Person {
 	@Override
     public String toString() {
     	/*
-    	System.out.println("... " + firstname); // ?? it's null
-    	System.out.println("+++ " + getFirstname()); // it's notnull
+    	System.out.println("... " + firstName); // ?? it's null
+    	System.out.println("+++ " + getFirstName()); // it's notnull
     	*/
 
         StringBuilder builder = new StringBuilder();
 
         builder.append("Person[");
-        builder.append("firstname=").append(getFirstname()).append(",");
-        builder.append("lastname=").append(getLastname()).append(",");
+        builder.append("firstName=").append(getFirstName()).append(",");
+        builder.append("lastName=").append(getLastName()).append(",");
         builder.append("defaultAddress=").append(getDefaultAddress()).append(",");
         builder.append("addresses=").append(getAddresses()).append(",");
         builder.append("age=").append(getAge()).append(",");

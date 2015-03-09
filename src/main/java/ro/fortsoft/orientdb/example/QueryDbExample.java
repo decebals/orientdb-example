@@ -80,8 +80,8 @@ public class QueryDbExample {
 		// create an object
         Person person = new Person();
 //        Person person = db.newInstance(Person.class);
-        person.setFirstname("Decebal");
-        person.setLastname("Suiu");
+        person.setFirstName("Decebal");
+        person.setLastName("Suiu");
 //        person.setAge(23);
 
         Address address = new Address();
