@@ -56,9 +56,9 @@ public class QueryDbExample {
 //        OObjectDatabaseTx db = new OObjectDatabaseTx("memory:data").create();
 
         // create a database on disk
-        OObjectDatabaseTx db = new OObjectDatabaseTx("local:data");
+        OObjectDatabaseTx db = new OObjectDatabaseTx("plocal:data");
         if (db.exists()) {
-        	db = new OObjectDatabaseTx("local:data").open("admin", "admin");
+        	db = new OObjectDatabaseTx("plocal:data").open("admin", "admin");
         } else {
         	db.create();
         }
